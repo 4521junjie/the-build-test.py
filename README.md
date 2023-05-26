@@ -17,7 +17,7 @@ The testing dataset does not adjust the model’s design and parameters, thus it
 ### 总结
 For the test script test.py targeted at resnet34, the model can be evaluated using the usual workflow with training, validation, and test data sets.
 
-### 🧡train0 Code (Detailed code is in the repository)
+## 2、🧡train0 Code (Detailed code is in the repository)
 
 The first step of the whole experiment is to run train0.py without encountering any issues. It has already been successfully run on the basis of the previous work。
 ``` python 
@@ -73,7 +73,7 @@ class Worker:
 ![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/f145cba5-fa7f-47c9-8b06-0b7d3d46bec6)
 
 
-### train0.py was modified to obtain train1.py（The modified parts are shown below.）
+## train0.py was modified to obtain train1.py（The modified parts are shown below.）
 
 ```python
 ...
