@@ -1,23 +1,24 @@
 # the-build-test.py
 ## ❤1、The similarities and purposes of validation set and test set
-### similarities
+### 1.1 similarities
 1、both are subsets partitioned from the original dataset； 
 
 2、both are used for model evaluation and selection；
 
 3、both are used to measure the generalization ability of models.。
 
-### Purpose
+### 1.2 Purpose
 The primary purpose of the validation dataset is to serve as a performance evaluation metric for a model during the training process, helping to select the best model. During training, the model is continuously tested on the validation dataset and parameters are adjusted to achieve the best validation accuracy.
 The validation dataset is typically used to train a model on the training dataset and evaluate its performance on the validation dataset, in order to determine which model performs best on the validation dataset.
 
 The purpose of a testing dataset is to perform the final evaluation of a model after training and tuning, in order to estimate the model’s performance and evaluate its generalization ability in real-world applications.
 The testing dataset does not adjust the model’s design and parameters, thus it can better represent the true performance of the model on unseen data.
 
-### 总结
+### 1.3 Summary
 For the test script test.py targeted at resnet34, the model can be evaluated using the usual workflow with training, validation, and test data sets.
 
-## 2、🧡train0 Code (Detailed code is in the repository)
+## 2、🧡实践部分
+### 2.1train0 Code (Detailed code is in the repository)
 
 The first step of the whole experiment is to run train0.py without encountering any issues. It has already been successfully run on the basis of the previous work。
 ``` python 
@@ -69,11 +70,11 @@ class Worker:
     # 训练与验证
    ...
 ```
-## Screenshot of successful execution
+### Screenshot of successful execution
 ![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/f145cba5-fa7f-47c9-8b06-0b7d3d46bec6)
 
 
-## train0.py was modified to obtain train1.py（The modified parts are shown below.）
+### 2.2train0.py was modified to obtain train1.py（The modified parts are shown below.）
 The second step is to apply the ResNet34 model and save the trained model
 ```python
 ...
@@ -129,7 +130,7 @@ class Worker:
 ## Screenshot of successful execution
 ![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/5c7672fb-2baa-4521-b36e-9796a7656f21)
 
-## The code for train1.py was modified and renamed to test.py.（The detailed code is in the repository）
+## 2.3The code for train1.py was modified and renamed to test.py.（The detailed code is in the repository）
 The last step is also a crucial one. Initially, I couldn't understand it and it wasn't until later that I realized the meaning of the sentence "你会发现 val 和 test 的步骤在本质上是一模一样的". So, I deleted and modified some parts, and encountered some issues such as file paths and naming. After troubleshooting, I finally resolved them with the help of my classmate Li. Thank you very much!
 
 ```python
