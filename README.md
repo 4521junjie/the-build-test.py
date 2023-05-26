@@ -127,10 +127,10 @@ class Worker:
     # 训练与验证
 ...
 ```
-## Screenshot of successful execution
+### Screenshot of successful execution
 ![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/5c7672fb-2baa-4521-b36e-9796a7656f21)
 
-## 2.3The code for train1.py was modified and renamed to test.py.（The detailed code is in the repository）
+### 2.3The code for train1.py was modified and renamed to test.py.（The detailed code is in the repository）
 The last step is also a crucial one. Initially, I couldn't understand it and it wasn't until later that I realized the meaning of the sentence "你会发现 val 和 test 的步骤在本质上是一模一样的". So, I deleted and modified some parts, and encountered some issues such as file paths and naming. After troubleshooting, I finally resolved them with the help of my classmate Li. Thank you very much!
 
 ```python
@@ -179,7 +179,7 @@ if __name__ == '__main__':
                        % (args.model, epoch, test_acc, test_loss)
             torch.save(worker.model, save_dir)
 ```
-## Screenshot of successful execution
+### Screenshot of successful execution
 ![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/a677dfe7-424c-4261-b8ed-04be63aa3eca)
 
 
