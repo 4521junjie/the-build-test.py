@@ -153,7 +153,8 @@ class Worker:
 ...
       ```
 ### 运行train_update.py后得到的结果（ResNet34模型）
-![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/1ecc8164-4267-4178-9353-33d63aca2116)
+![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/b179e81f-21bd-47d0-aeca-327813d8d3d1)
+
 
 
 
