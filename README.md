@@ -1,5 +1,5 @@
 # the-build-test.py
-## ❤1、The similarities and purposes of validation set and test set
+## 1、 ❤The similarities and purposes of validation set and test set
 ### 1.1 similarities
 1、both are subsets partitioned from the original dataset； 
 
@@ -181,7 +181,7 @@ if __name__ == '__main__':
 ```
 ### Screenshot of successful execution
 ![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/a677dfe7-424c-4261-b8ed-04be63aa3eca)
-## 💛3测试结果
+## 3、 💛测试结果
 1、The model has an average loss of 0.6966 and an accuracy of 0/7 after testing on the validation set, which means the prediction accuracy of the model is 0% on the test set, indicating poor performance on the new data.
 2、This means that the model may perform well on the training data, but performs poorly on new data and is unable to accurately predict the target variable. Further model optimization or adjustments are needed to improve the prediction capability of the model.
 3、More training data, deeper neural network structures, better optimizers, or adjusting hyperparameters might be needed to improve the performance of the model.
