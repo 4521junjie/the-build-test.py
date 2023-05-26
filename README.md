@@ -152,7 +152,7 @@ class Worker:
     # 训练与验证
 ...
 ```
-### 运行train_update.py后得到的结果（ResNet34模型）
+# 运行train_update.py后得到的结果（ResNet34模型）
 ![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/5c7672fb-2baa-4521-b36e-9796a7656f21)
 
 ## 将trian1.py改为test.py代码（详细代码在仓库）
@@ -212,7 +212,7 @@ if __name__ == '__main__':
                        % (args.model, epoch, test_acc, test_loss)
             torch.save(worker.model, save_dir)
 ```
-### 运行test.py得到的结果
+# 运行test.py得到的结果
 ![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/a677dfe7-424c-4261-b8ed-04be63aa3eca)
 
 
