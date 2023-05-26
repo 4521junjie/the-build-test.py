@@ -74,7 +74,7 @@ class Worker:
 
 
 ## train0.py was modified to obtain train1.py（The modified parts are shown below.）
-
+The second step is to apply the ResNet34 model and save the trained model
 ```python
 ...
 from models.ResNet34_update import *
@@ -130,6 +130,8 @@ class Worker:
 ![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/5c7672fb-2baa-4521-b36e-9796a7656f21)
 
 ## The code for train1.py was modified and renamed to test.py.（The detailed code is in the repository）
+The last step is also a crucial one. Initially, I couldn't understand it and it wasn't until later that I realized the meaning of the sentence "你会发现 val 和 test 的步骤在本质上是一模一样的". So, I deleted and modified some parts, and encountered some issues such as file paths and naming. After troubleshooting, I finally resolved them with the help of my classmate Li. Thank you very much!
+
 ```python
 import argparse
 ...
