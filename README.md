@@ -151,10 +151,94 @@ class Worker:
 
     # 训练与验证
 ...
-      ```
+```
 ### 运行train_update.py后得到的结果（ResNet34模型）
-![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/16a17fcb-3076-44bd-8f05-0bb8bb476a82)
-![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/e7a7abce-c514-4676-b0fa-3c5d7a2c2823)
+![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/5c7672fb-2baa-4521-b36e-9796a7656f21)
+
+## 将trian1.py改为test.py代码（详细代码在仓库）
+```python
+import argparse
+...
+
+
+# 初始化参数
+def get_args():
+  ...
+
+    # model
+    parser.add_argument('--model', type=str, default='ResNet34')
+
+    # scheduler
+  ...
+
+    # 通过json记录参数配置
+  ...
+
+    # 返回参数集
+    return arg
+class Worker:
+    def __init__(self, args):
+        self.opt = args
+        # 判定设备
+       ...
+        )
+        # 挑选神经网络、参数初始化
+     ...
+        # 优化器
+     ...
+        )
+
+        # 损失函数
+        self.loss_function = nn.CrossEntropyLoss()
+
+    def test(self):
+        self.model.eval()
+        validating_loss = 0
+       ...
+                # 测试中...
+              ...
+        # 打印验证结果
+       ...
+        # 返回重要信息，用于生成模型保存命名
+      ...
+if __name__ == '__main__':
+    # 初始化
+  ...
+    # 训练与验证
+    for epoch in range(1, args.epochs + 1):
+        test_acc, test_loss = worker.test()
+        if epoch > args.save_station:
+            save_dir = args.directory + '%s-epochs-%d-model-test-acc-%.3f-loss-%.6f.pt' \
+                       % (args.model, epoch, test_acc, test_loss)
+            torch.save(worker.model, save_dir)
+```
+### 运行test.py得到的结果
+![image](https://github.com/4521junjie/the-build-test.py/assets/119326710/a677dfe7-424c-4261-b8ed-04be63aa3eca)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
